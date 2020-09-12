@@ -1,0 +1,9 @@
+{
+    "123": {
+        "name": "John Doe",
+        "course": "ML101 - Machine Learning",
+        "threshold": "70%",
+        "score": "77.8%",
+        "issuedOn": "9 September, 2020"
+    }
+}
