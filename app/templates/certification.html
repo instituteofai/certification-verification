@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Certificate Verification{% endblock %}
+{% block content %}
+<div>
+    <div>
+        <p>
+            Institute of AI verifies that <strong>{{ data.name }}</strong>
+            completed the course <strong>{{ data.course }}</strong>
+            and obtained a score of <strong>over {{ data.threshold }}</strong> from 
+            the maximum number of points in graded quizzes and assignments 
+            to earn this certificate.
+        </p>
+    </div>
+    <div>
+        <h3>Certificate Information</h3>
+        <p>Certificate ID: {{ guid }}</p>
+        <p>Issued on: {{ data.issuedOn }}</p>
+        <p>Score: {{ data.score }}</p>
+    </div>
+</div>
+<div style="display: flex; justify-content:space-between;">
+    <div>
+        <h3>Course Information</h3>
+        <a href="https://instituteofai.com/machine-learning" target="_blank">ML101 - Machine Learning</a>
+        <p>Duration: 6 months</p>
+        <p>Topics covered</p>
+        <ul>
+            <li>Introduction to Python</li>
+            <li>Working with data in Python</li>
+            <li>Supervised learning</li>
+            <li>Unsupervised learning</li>
+            <li>Ensemble learning</li>
+            <li>Deploying a model to a cloud provider</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Digital Badge</h3>
+        <img
+            style="height: 320px; width: 320px;"
+            src="../static/images/ml101-badge.png"
+            alt="ML101 Badge"
+          />
+    </div>
+</div>
+
+{% endblock %}

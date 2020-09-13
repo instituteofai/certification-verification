@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Institute of AI</title>
+    <link rel="stylesheet" href="/static/stylesheets/layout.css">
+    <link rel="stylesheet" href="/static/stylesheets/base.css">
+    <link rel="stylesheet" href="/static/stylesheets/w3.css">
+</head>
+<body>
+    <header class="header-base">
+        <div class="w3-bar w3-bar-custom">
+            <div class="w3-hide-medium w3-hide-large" style="margin: auto"></div>
+            <img
+            style="float: left; height: 50px; box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1); margin-bottom: 0"
+            src="../static/images/iai_hires.png"
+            alt="IAI logo"
+          />
+          <h1 class="w3-bar-item w3-hide-small" style="margin: 0">
+            <span style="margin-left: '14px'">Institute of AI</span>
+          </h1>
+        </div>
+        <hr>
+    </header>
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>
