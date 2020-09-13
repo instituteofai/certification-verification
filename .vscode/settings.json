@@ -1,4 +1,6 @@
 {
-    "python.pythonPath": "venv/bin/python",
-    "python.formatting.provider": "yapf"
+  "python.formatting.provider": "yapf",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "/opt/anaconda3/envs/cert-server/bin/python"
 }
